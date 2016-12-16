@@ -40,11 +40,11 @@ class _MethodViewInfo(object):
         except AttributeError: return None
 
     def __init__(self, methods=None, ifnset=None, ifset=None):
-        if isinstance(methods, basestring):
+        if isinstance(methods, str):
             methods = (methods,)
-        if isinstance(ifnset, basestring):
+        if isinstance(ifnset, str):
             ifnset = (ifnset,)
-        if isinstance(ifset, basestring):
+        if isinstance(ifset, str):
             ifset = (ifset,)
 
         #: Method verbs, uppercase
